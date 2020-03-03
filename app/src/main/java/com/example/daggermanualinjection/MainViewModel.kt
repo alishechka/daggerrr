@@ -1,6 +1,8 @@
 package com.example.daggermanualinjection
 
-class MainViewModel(
+import javax.inject.Inject
+
+class MainViewModel @Inject constructor(
     private val networkService: NetworkService,
     private val databaseService: DatabaseService
 ) {
